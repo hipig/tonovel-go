@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Title}} - {{.AppName}}</title>
+</head>
+<body>
+    <div>
+        <!-- Render the current template here -->
+        {{ yield }}
+        <hr />
+        <footer>
+            <p>&copy; 2017 - {{.AppName}}</p>
+        </footer>
+    </div>
+</body>
+</html>
