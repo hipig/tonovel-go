@@ -7,6 +7,7 @@ import (
 	"github.com/kataras/iris/v12/middleware/recover"
 	"github.com/kataras/iris/v12/sessions"
 	"github.com/kataras/iris/v12/websocket"
+	"html/template"
 	"time"
 )
 
@@ -38,7 +39,11 @@ func New(appName, appOwner string, cfgs ...Configurator) *Bootstrapper {
 
 // SetupViews loads the templates.
 func (b *Bootstrapper) SetupViews(viewsDir string) {
-	b.RegisterView(iris.HTML(viewsDir, ".html").Layout("shared/layout.html"))
+	templates := iris.HTML(viewsDir, ".html").Layout("shared/layout.html")
+	templates.AddFunc("unescaped", func(x string) interface{} {
+		return template.HTML(x)
+	})
+	b.RegisterView(templates)
 }
 
 // SetupSessions initializes the sessions, optionally.

@@ -1,0 +1,23 @@
+<h1>这是详情页</h1>
+
+<p>来源网址：{{.url}}</p>
+
+<img src="{{.info.Cover}}" alt="">
+<h3>{{.info.Name}}</h3>
+<p>作者：{{.info.Author}}</p>
+<p>分类：{{.info.Category}}</p>
+<p>描述：{{.info.Description|unescaped}}</p>
+
+
+<h4>最新章节</h4>
+<ul>
+    {{range $i, $item := .newChapterList}}
+        <li><a href="/content?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
+    {{end}}
+</ul>
+<h4>全部章节</h4>
+<ul>
+    {{range $i, $item := .chapterList}}
+        <li><a href="/content?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
+    {{end}}
+</ul>

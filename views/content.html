@@ -1,0 +1,18 @@
+<h1>这是内容页</h1>
+
+<h3>{{.content.Title}}</h3>
+
+<div>{{.content.Text|unescaped}}</div>
+
+<div>
+    {{if eq .content.PreviousURL ""}}
+        <a href="jascript:;">上一章节</a>
+    {{else}}
+        <a href="/content?url={{.content.PreviousURL}}&source={{.source}}">上一章节</a>
+    {{end}}
+    {{if eq .content.NextURL ""}}
+        <a href="jascript:;">下一章节</a>
+    {{else}}
+        <a href="/content?url={{.content.NextURL}}&source={{.source}}">下一章节</a>
+    {{end}}
+</div>
