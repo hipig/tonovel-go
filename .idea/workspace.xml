@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7b85b7a-aca4-4e5a-907c-e685f6c59d27" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/bootstrapper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/book_source.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_source.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasource/book_sources.go" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/book_sources.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/controllers/index_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/controllers/index_controller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/shared/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/shared/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/search_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/search_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -66,14 +63,13 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <auto-vendoring-mode>false</auto-vendoring-mode>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="162" key="SettingsEditor" timestamp="1583861999893">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1583951430829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583861999893" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583951430829" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583909495175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

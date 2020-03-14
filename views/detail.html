@@ -12,12 +12,12 @@
 <h4>最新章节</h4>
 <ul>
     {{range $i, $item := .newChapterList}}
-        <li><a href="/content?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
+        <li><a href="/read?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
     {{end}}
 </ul>
 <h4>全部章节</h4>
 <ul>
     {{range $i, $item := .chapterList}}
-        <li><a href="/content?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
+        <li><a href="/read?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
     {{end}}
 </ul>
