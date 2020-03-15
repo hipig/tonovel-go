@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b85b7a-aca4-4e5a-907c-e685f6c59d27" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/book_content.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_content.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/book_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/chapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/chapter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http/controllers/index_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/controllers/index_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/book_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/common.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/search_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/search_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\go\tonovel\utils\response" />
       <recent name="E:\code\go\tonovel\http\middlewares\identity" />
     </key>
   </component>

@@ -8,7 +8,7 @@ import (
 
 type IndexController struct {
 	Ctx iris.Context
-	Service services.NovelService
+	Service services.BookService
 }
 
 func (c *IndexController) Get() mvc.View {
@@ -20,48 +20,34 @@ func (c *IndexController) Get() mvc.View {
 	}
 }
 
-func (c *IndexController) GetSearch() mvc.View {
+func (c *IndexController) GetSearch() {
 	k := c.Ctx.FormValue("k")
 	results := c.Service.GetListByKeyword(k)
 
-	return mvc.View{
-		Name: "search.html",
-		Data:iris.Map{
-			"Title": k+"-搜索",
-			"k": k,
-			"results": results,
-		},
-	}
+	c.Ctx.JSON(results)
 }
 
-func (c *IndexController) GetDetail() mvc.View {
-	url := c.Ctx.FormValue("url")
+func (c *IndexController) GetInfo() {
+	detailURL := c.Ctx.FormValue("detail_url")
 	source := c.Ctx.FormValue("source")
-	info, newChapterList, chapterList := c.Service.GetDetail(url, source)
+	info := c.Service.GetInfo(detailURL, source)
 
-	return mvc.View{
-		Name: "detail.html",
-		Data: iris.Map{
-			"Title": info.Name+"-小说详情",
-			"url": url,
-			"info": info,
-			"newChapterList": newChapterList,
-			"chapterList": chapterList,
-		},
-	}
+	c.Ctx.JSON(info)
 }
 
-func (c *IndexController) GetRead() mvc.View {
-	url := c.Ctx.FormValue("url")
+func (c *IndexController) GetChapters() {
+	detailURL := c.Ctx.FormValue("detail_url")
 	source := c.Ctx.FormValue("source")
-	content := c.Service.GetContent(url, source)
+	chapterList := c.Service.GetChapterList(detailURL, source)
 
-	return mvc.View{
-		Name: "content.html",
-		Data: iris.Map{
-			"Title": content.Title+"-内容",
-			"content": content,
-			"source": source,
-		},
-	}
+	c.Ctx.JSON(chapterList)
+}
+
+func (c *IndexController) GetRead() {
+	detailURL := c.Ctx.FormValue("detail_url")
+	chapterURL := c.Ctx.FormValue("chapter_url")
+	source := c.Ctx.FormValue("source")
+	content := c.Service.GetContent(detailURL, chapterURL, source)
+
+	c.Ctx.JSON(content)
 }

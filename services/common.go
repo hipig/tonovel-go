@@ -7,6 +7,7 @@ import (
 	"golang.org/x/net/html"
 	"log"
 	"net/url"
+	"strings"
 )
 
 func ParseRule(node *html.Node, rule string, t string) (result string) {
@@ -37,12 +38,18 @@ func FormatURL(href string, base string) (result string) {
 	return
 }
 
-func NewColly(resp colly.ResponseCallback) *colly.Collector {
+func NewColly(parse func(doc *html.Node)) *colly.Collector {
 	c := colly.NewCollector()
 	extensions.RandomUserAgent(c)
 	extensions.Referer(c)
 
-	c.OnResponse(resp)
+	c.OnResponse(func(res *colly.Response) {
+		doc, err := htmlquery.Parse(strings.NewReader(string(res.Body)))
+		if err != nil {
+			log.Fatalln(err)
+		}
+		parse(doc)
+	})
 	c.OnRequest(func(r *colly.Request) {
 		log.Println("Visiting", r.URL)
 	})

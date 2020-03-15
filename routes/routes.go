@@ -8,6 +8,7 @@ import (
 )
 
 func Configure(b *bootstrap.Bootstrapper)  {
+	b.Use()
 	root := mvc.New(b)
 	root.Register(services.NewBookService())
 	root.Handle(new(controllers.IndexController))

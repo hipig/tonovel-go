@@ -8,13 +8,6 @@
 <p>分类：{{.info.Category}}</p>
 <p>描述：{{.info.Description|unescaped}}</p>
 
-
-<h4>最新章节</h4>
-<ul>
-    {{range $i, $item := .newChapterList}}
-        <li><a href="/read?url={{$item.URL}}&source={{$item.Source}}" target="_blank">{{$item.Title}}</a></li>
-    {{end}}
-</ul>
 <h4>全部章节</h4>
 <ul>
     {{range $i, $item := .chapterList}}
