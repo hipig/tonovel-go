@@ -3,15 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b85b7a-aca4-4e5a-907c-e685f6c59d27" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/book_content.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_content.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datamodels/book_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/chapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/chapter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/book_source.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_source.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/chapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_chapter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/search_item.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/book_sources.go" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/book_sources.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http/controllers/index_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/controllers/index_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/middlewares/cors/cors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/middlewares/identity/identity.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/book_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/common.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/response/response.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/http/middlewares" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +62,11 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\go\tonovel\http\middlewares" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\go\tonovel\http\middlewares\cors" />
       <recent name="E:\code\go\tonovel\utils\response" />
       <recent name="E:\code\go\tonovel\http\middlewares\identity" />
     </key>
@@ -70,13 +79,17 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1584324977314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1584324977314" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1583951430829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583951430829" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583909495175">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584807159790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583909495175" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584807159790" />
   </component>
 </project>

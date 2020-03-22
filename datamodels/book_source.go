@@ -14,11 +14,15 @@ type BookSource struct {
 	SearchItemNewChapterRule string 	`json:"search_item_new_chapter_rule" comment:"搜索结果最新章节规则"`
 	SearchItemURLRule string 	`json:"search_item_url_rule" comment:"搜索结果链接规则"`
 
-	DetailBookNameRule string 	`json:"detail_book_name_rule" comment:"小说名称"`
-	DetailBookAuthorRule string 	`json:"detail_book_author_rule" comment:"小说作者"`
-	DetailBookCoverRule string 	`json:"detail_book_cover_rule" comment:"小说封面"`
-	DetailBookCategoryRule string 	`json:"detail_book_category_rule" comment:"小说分类"`
-	DetailBookDescriptionRule string 	`json:"detail_book_description_rule" comment:"小说描述"`
+
+	DetailBookItemRule string 	`json:"detail_book_item_rule" comment:"小说详情规则"`
+	DetailBookNameRule string 	`json:"detail_book_name_rule" comment:"小说名称规则"`
+	DetailBookAuthorRule string 	`json:"detail_book_author_rule" comment:"小说作者规则"`
+	DetailBookCoverRule string 	`json:"detail_book_cover_rule" comment:"小说封面规则"`
+	DetailBookCategoryRule string 	`json:"detail_book_category_rule" comment:"小说分类规则"`
+	DetailBookDescriptionRule string 	`json:"detail_book_description_rule" comment:"小说描述规则"`
+	DetailBookNewChapterRule string 	`json:"detail_book_new_chapter_rule" comment:"小说最新章节规则"`
+
 	DetailChapterListURLRule string 	`json:"detail_chapter_url_rule" comment:"小说章节列表链接规则"`
 	DetailNewChapterRule string 	`json:"detail_new_chapter_rule" comment:"小说新章节规则"`
 	DetailNewChapterTitleRule string 	`json:"detail_new_chapter_rule" comment:"小说新章节名称规则"`

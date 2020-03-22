@@ -2,15 +2,14 @@ package main
 
 import (
 	"tonovel/bootstrap"
-	"tonovel/http/middlewares/cors"
-	"tonovel/http/middlewares/identity"
+	"tonovel/http/middlewares"
 	"tonovel/routes"
 )
 
 func newApp() *bootstrap.Bootstrapper {
 	app := bootstrap.New("toNovel", "205270006@qq.com")
 	app.Bootstrap()
-	app.Configure(identity.Configure, cors.Configure, routes.Configure)
+	app.Configure(middlewares.Configure, routes.Configure)
 	return app
 }
 
