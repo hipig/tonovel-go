@@ -3,20 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b85b7a-aca4-4e5a-907c-e685f6c59d27" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/book_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/book_source.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_source.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/chapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/book_chapter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/search_item.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasource/book_sources.go" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/book_sources.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/controllers/index_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/controllers/index_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/middlewares/cors/cors.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/middlewares/identity/identity.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/book_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/book_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/common.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/response/response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/bootstrapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/bootstrapper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/runner-build-errors.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/runner-build.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/runner-build.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +63,27 @@
       <recent name="E:\code\go\tonovel\utils\response" />
       <recent name="E:\code\go\tonovel\http\middlewares\identity" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="tonovel" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="tonovel" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
