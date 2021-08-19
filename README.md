@@ -3,7 +3,7 @@ toNovel
 tonovel 是一个简洁，干净的小说聚合系统
 
 ## 概述
-预览：[http://47.98.131.100](http://47.98.131.100?_blank)
+预览：地址已失效
 
 后端地址：[https://github.com/hipig/tonovel-go](https://github.com/hipig/tonovel-go)
 
